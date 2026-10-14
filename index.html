@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammadxori Shokirjonov | Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background-color: #0f172a;
+            color: #f8fafc;
+            line-height: 1.6;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(15, 23, 42, 0.9);
+            backdrop-filter: blur(10px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 10%;
+            z-index: 1000;
+            border-bottom: 1px solid #1e293b;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: 700;
+            color: #38bdf8;
+            text-decoration: none;
+        }
+
+        nav a {
+            color: #cbd5e1;
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #38bdf8;
+        }
+
+        section {
+            padding: 120px 10% 80px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .hero h1 {
+            font-size: 44px;
+            margin-bottom: 15px;
+            color: #f8fafc;
+        }
+
+        .hero h1 span {
+            color: #38bdf8;
+        }
+
+        .hero p {
+            font-size: 20px;
+            color: #94a3b8;
+            max-width: 650px;
+            margin-bottom: 30px;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            background: #38bdf8;
+            color: #0f172a;
+            font-weight: 600;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .btn:hover {
+            background: #0284c7;
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 2px solid #38bdf8;
+            color: #38bdf8;
+        }
+
+        .btn-outline:hover {
+            background: rgba(56, 189, 248, 0.1);
+            color: #38bdf8;
+        }
+
+        .section-title {
+            font-size: 32px;
+            margin-bottom: 30px;
+            color: #38bdf8;
+            position: relative;
+        }
+
+        .about-content {
+            background: #1e293b;
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid #334155;
+            max-width: 800px;
+        }
+
+        .about-content p {
+            margin-bottom: 15px;
+            color: #cbd5e1;
+            font-size: 18px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            max-width: 900px;
+        }
+
+        .skill-card {
+            background: #1e293b;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            border: 1px solid #334155;
+            font-weight: 600;
+            color: #f8fafc;
+            font-size: 18px;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+            border-color: #38bdf8;
+        }
+
+        .contact-card {
+            background: #1e293b;
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid #334155;
+            max-width: 600px;
+        }
+
+        .contact-item {
+            margin-bottom: 15px;
+            font-size: 18px;
+            color: #cbd5e1;
+        }
+
+        .contact-item a {
+            color: #38bdf8;
+            text-decoration: none;
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #0b1120;
+            color: #64748b;
+            border-top: 1px solid #1e293b;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                padding: 15px 5%;
+            }
+            section {
+                padding: 100px 5% 50px;
+            }
+            .hero h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <a href="#home" class="logo">Muhammadxori</a>
+        <nav>
+            <a href="#home">Asosiy</a>
+            <a href="#about">Men haqimda</a>
+            <a href="#skills">Ko'nikmalar</a>
+            <a href="#contact">Aloqa</a>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <h1>Assalomu alaykum, men <span>Muhammadxori Shokirjonov</span></h1>
+        <p>IT sohasida o'qiyman. Dasturlash va mikrokontrollerlar olamini chuqur o'rganib, amaliy loyihalar yaratishga qiziqaman.</p>
+        <div class="btn-group">
+            <a href="#contact" class="btn">Bog'lanish</a>
+            <a href="https://github.com/muhammadxoriss-cyber" target="_blank" class="btn btn-outline">GitHub</a>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2 class="section-title">Men haqimda</h2>
+        <div class="about-content">
+            <p>Hozirgi kunda IT sohasida tahsil olyapman va texnologiyalarni chuqur o'rganishga bo'lgan qiziqishim juda baland.</p>
+            <p>Dasturlash tillari, xususan Python hamda apparat ta'minoti (hardware) yo'nalishidagi ESP32 va Arduino kabi mikrokontrollerlar bilan ishlash, sxemalar tuzish asosiy yo'nalishlarimdan hisoblanadi.</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2 class="section-title">Ko'nikmalar va Texnologiyalar</h2>
+        <div class="skills-grid">
+            <div class="skill-card">Python</div>
+            <div class="skill-card">ESP32</div>
+            <div class="skill-card">Arduino</div>
+            <div class="skill-card">Tinkercad</div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2 class="section-title">Aloqa</h2>
+        <div class="contact-card">
+            <div class="contact-item"><strong>Email:</strong> <a href="mailto:Muhammadxoriss@gmail.com">Muhammadxoriss@gmail.com</a></div>
+            <div class="contact-item"><strong>Telegram:</strong> <a href="https://t.me/Muhammadxarisem_m" target="_blank">@Muhammadxarisem_m</a></div>
+            <div class="contact-item"><strong>GitHub:</strong> <a href="https://github.com/muhammadxoriss-cyber" target="_blank">muhammadxoriss-cyber</a></div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Muhammadxori Shokirjonov. Barcha huquqlar himoyalangan.</p>
+    </footer>
+
+</body>
+</html>
+
